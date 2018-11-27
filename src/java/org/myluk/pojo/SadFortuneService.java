@@ -5,12 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Lazy
-public class HappyFortuneService implements FortuneService {
+public class SadFortuneService implements FortuneService {
     public String getFortune() {
-        return "Today is your lucky day";
+        return "Today is a sad day";
     }
 
-    public HappyFortuneService() {
-        System.out.println("Happy service");
+    public SadFortuneService() {
+        System.out.println("Sad service");
     }
 }
